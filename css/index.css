@@ -32,9 +32,10 @@ nav {
     top: 0;
     z-index: 1;
     border-bottom-style: groove;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
+    /* display: flex; */
     /* background-color: rgb(0,0,0,95);
     color: rgb(255,255,255); */
 }
@@ -59,7 +60,8 @@ nav img {
 }
 
 .main {
-    max-width: 1000px;
+    padding: 25px 25px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,41 +75,141 @@ nav img {
 .main p {
     font-size: 28px;
     margin: 0;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
-.lists, .news, .resources, .topics {
-    max-width: 900px;
+.lists, .news, .resources, .topics, .songs, .videos {
+    padding: 95px 25px;
+    /* padding-bottom: 300px; */
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    /* border-bottom-style: solid;
+    border-bottom-width: 1px; */
 }
 
-.lists h1, .news h1 , .resources h1, .topics h1 {
+.lists h1, .news h1 , .resources h1, .topics h1, .songs h1, .videos h1 {
     font-size: 40px;
+    margin: 0;
 }
 
-.resources h2, .topics h2 {
+.resources h2, .topics h2, .songs h2, .videos h2 {
     font-size: 28px;
     font-weight: initial;
+    margin: 0;
 }
 
+.lists p, .news p , .resources p, .topics p, .songs p, .videos p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.topics a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.topics a:hover {
+    text-decoration: underline;
+}
+
+.topics h2 a:link, .topics a:visited {
+    color: var(--text);
+    /* text-decoration: none; */
+}
+
+.songs .post, .topics .post {
+    display: inline-block;
+}
+
+
+.post {
+    /* background-color: rgb(146, 252, 252); */
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    /* filter: drop-shadow(0 0 2px rgb(0, 0, 0)); */
+    width: auto;
+    padding: 16px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.post h1 {
+    /* text-align: center; */
+}
+
+.post h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.post h4 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.post h5 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.post p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.post a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: inherit;
+}
+
+.post a:link, a:visited {
+    color: var(--text);
+}
+
+.post a:hover {
+    text-decoration:overline;
+}
+
+.songs img, .topics img {
+    display: grid;
+    align-content: center;
+    padding: auto;
+}
+
+.post img {
+    margin: 10px;
+    /* padding-left: 2.5px;
+    padding-right: 2.5px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 40px;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+}
 
 
 
 footer {
-    font-size: 16px;
-    position: absolute;
+    text-align: center;
+    text-align: -webkit-center;
+    position: relative;
     bottom: 0;
     width: 100%;
-    max-height: 40px;
-    z-index: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    /* background-color: rgb(0,0,0,95);
-    color: rgb(255,255,255); */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    /* padding-top: 200px; */
 }
 
 
