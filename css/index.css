@@ -25,6 +25,7 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     font-size: 16px;
     margin: 0;
+    cursor: default;
 }
 
 nav {
@@ -32,9 +33,11 @@ nav {
     top: 0;
     z-index: 1;
     border-bottom-style: groove;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+    width: max-content;
+    margin: auto;
     /* display: flex; */
     /* background-color: rgb(0,0,0,95);
     color: rgb(255,255,255); */
@@ -61,19 +64,20 @@ nav img {
 
 .main {
     padding: 25px 25px;
-    max-width: 850px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .main h1 {
-    font-size: 50px;
+    font-size: 2.2rem;
     margin: 0;
     padding-top: 30px;
+    text-align: center;
 }
 
 .main p {
-    font-size: 28px;
+    font-size: 1.5em;
     margin: 0;
     padding-top: 10px;
 }
@@ -81,7 +85,7 @@ nav img {
 .lists, .news, .resources, .topics, .songs, .videos {
     padding: 95px 25px;
     /* padding-bottom: 300px; */
-    max-width: 1100px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     /* border-bottom-style: solid;
@@ -127,11 +131,11 @@ nav img {
     /* background-color: rgb(146, 252, 252); */
     border-collapse: collapse;
     border-style: solid;
-    border-width: 1px;
+    /* border-width: 1px; */
     /* filter: drop-shadow(0 0 2px rgb(0, 0, 0)); */
     width: auto;
     padding: 16px;
-    margin: 15px;
+    margin: 20px;
     border-radius: 10px;
 }
 
@@ -172,7 +176,8 @@ nav img {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    margin: inherit;
+    margin: auto;
+    padding: inherit;
 }
 
 .post a:link, a:visited {
@@ -209,7 +214,7 @@ footer {
     width: 100%;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    /* padding-top: 200px; */
+    padding-top: 200px;
 }
 
 
@@ -225,4 +230,23 @@ footer a:hover {
 footer a:link, footer a:visited {
     color: var(--text);
     /* text-decoration: none; */
+}
+
+@media (max-width: 850px) {
+    .content {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .content::-webkit-scrollbar {
+        display: none;
+      }
+
+    .songs a {
+        /* margin: inherit; */
+    }
 }
